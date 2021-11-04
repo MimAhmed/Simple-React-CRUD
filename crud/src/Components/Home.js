@@ -18,9 +18,8 @@ const Home = () => {
     const deleteUser = async id => {
         await axios.delete(`http://localhost:3004/users/${id}`);
         loadUsers();
-
-
     };
+
     return (
         <div className="container">
             <div className="py-4">

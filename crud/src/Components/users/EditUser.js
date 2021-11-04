@@ -21,7 +21,8 @@ const EditUser = () => {
 
     useEffect(() => {
         loaduser();
-    }, [])
+    })
+
     const onSubmit = async e => {
         e.preventDefault();
         await axios.put(`http://localhost:3004/users/${id}`, user);
